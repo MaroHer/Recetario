@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app ="http://schemas.android.com/apk/res-auto">
+
+
+
+  <item
+  android:id ="@+id/opcion1"
+  android:title ="Opcion 1"
+  android:icon="@mipmap/ic_favorite_border_white_24dp"
+  app:showAsAction="always" />
+
+
+
+  <item
+  android:id ="@+id/opcion2"
+  android:title ="About"
+  app:showAsAction="never" />
+
+
+
+  <item
+  android:title="Opcion 3"
+  android:icon="@mipmap/ic_people_white_24dp"
+  app:showAsAction="always">
+    <menu>
+      <group android:checkableBehavior="single">
+        <item
+        android:id ="@+id/uno"
+        android:title ="1 porcion"
+        android:checked="true" />
+        <item
+        android:id ="@+id/dos"
+        android:title ="2 porciones" />
+        <item
+        android:id ="@+id/trs"
+        android:title ="3 porciones" />
+      </group>
+    </menu>
+  </item>
+</menu>
